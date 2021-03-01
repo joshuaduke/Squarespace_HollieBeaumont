@@ -1,6 +1,120 @@
+/* general styles */
+*{
+    margin:0;
+    padding:0;
+    line-height:1.6em;
+    box-sizing: border-box;
+}
 
+h1,h2,h3,h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color:#333;
+}
 
 img{
     height:450px;
     width:610px;
 }
+
+/* Navbar section */
+
+#navbar{
+    height:150px;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'left right';
+}
+
+ul{
+    display:inline-block;
+    padding:50px 50px 50px 40px;
+}
+
+#navbar h1{
+    display:inline;
+    margin-right:20px;
+}
+
+#navbar li{
+    display:inline;
+    font-size:18px;
+    margin:0 8px;
+}
+
+.nav1_left{
+    grid-area:left;
+}
+.nav1_right{
+    grid-area:right;
+    text-align: right;
+}
+
+
+/* Image Grid Section */
+
+#image_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding:16px 55px; */
+}
+
+figure{
+    margin:16px 50px;
+}
+
+figcaption{
+    padding-top:10px;
+}
+
+
+/* About us section */
+#about{
+    width:100%;
+}
+
+#about div{
+    width:615px;
+    font-size:30px;
+    padding:50px;
+}
+
+#about a{
+    display:block;
+    margin:20px 0;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding-bottom:50px;
+}
+
+footer div{
+    padding:30px 50px;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+footer p:nth-of-type(3){
+    margin-top:10px;
+}
+/* Media Queries */
